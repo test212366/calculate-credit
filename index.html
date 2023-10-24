@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<main class="main">
+		<div class="container">
+			<h3>Рассчитать ипотеку</h3>
+			<div class="wrapper">
+				<div class="one">
+					<div class="title">
+						<small>Стоимость недвижимости:</small>
+						<input type="number" required id="rooms">
+						<input type="range" min="100000" max="10000000" id="input-for-rooms" class="input-range">
+					</div>
+					<div class="title">
+						<small>Первоначальный взнос:</small>
+						<input type="number" required id="vznos">
+						<input type="range" min="10000" max="10000000" id="input-for-vznos" class="input-range">
+					</div>
+					<div class="title">
+						<small>Срок кредита: (года)</small>
+						<input type="number" required id="time">
+						<input type="range" min="1" max="90" id="input-for-time" class="input-range">
+					</div>
+				</div>
+				<div class="two">
+					<div class="sum-credit">
+						<small>Сумма кредита, которую необходимо выплатить</small>
+						<div id="sum">0 P</div>
+					</div>
+					<div class="platesh">
+						<small>Ежемесячный платеж</small>
+						<div id="plata">0 P</div>
+					</div>
+					<div class="recomend-dox">
+						<small>Рекомендуемый доход</small>
+						<div id="recomend">0 P</div>
+					</div>
+				</div>
+			</div>
+			<div class="banks">
+				<button class="btn active" data-button="alfa" id="first">Альфа-банк 8,7%</button>
+				<button class="btn" data-button="sberbank">Cбербанк 8.4%</button>
+				<button class="btn" data-button="pochta">Почта-банк 7.9%</button>
+				<button class="btn" data-button="tinkoff">Тинькофф-банк 9.2%</button>
+			</div>
+		</div>
+	</main>
+
+
+
+	<script src="./script.js"></script>
+</body>
+
+</html>
